@@ -1,0 +1,45 @@
+.nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(37, 37, 37);
+    color: white;
+    height: 10vh;
+    position: fixed;
+    box-shadow: 1px 1px 5px rgb(93, 93, 93);
+    z-index: 2;
+}
+.nav .logo {
+    height: 100%; width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    font-weight: bold;
+}
+.nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.nav ul li {
+    list-style: none;
+    margin: 15px;
+    cursor: pointer;
+}
+.verticalLine {
+    height: 90%; width: 1px;
+    background-color: white;
+}
+.nav .socialArea {
+    margin-right: 15%;
+    display: flex;
+}
+.nav .socialArea img {
+    width: 30px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

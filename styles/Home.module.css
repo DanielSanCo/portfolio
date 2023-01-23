@@ -1,0 +1,156 @@
+
+
+.container {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.main {
+  width: 100vw;
+}
+.initialPage {
+  min-height: 70vh;
+  min-width: 100vw;
+  background-color: rgb(202, 202, 202);
+  display: flex;
+  color: black;
+  flex-direction: column;
+  position: fixed;
+  z-index: 0;
+}
+.initialPage .initialInfoPageArea {
+  background: white;
+  height: 70vh; width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.initialPage .initialInfoPageArea div {
+  margin: 1px;
+}
+.initialPage .initialInfoPageArea div:nth-child(2) {
+  height: 100%;
+  margin: 1px;
+}
+
+.initialPage .initialInfoPageArea div:nth-child(2) {
+  width: 600px;
+}
+
+.initialPage .initialInfoPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.initialPage .initialInfoPage h2 {
+  width: 100%;
+  font-size: 40px;
+  margin-bottom: 2px;
+}
+.initialPage .initialInfoPage h4 {
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 0;
+  letter-spacing: 4px;
+}
+.initialPage .initialInfoPage p {
+  max-width: 300px;
+  text-align: left;
+}
+.initialPage .initialInfoPage p span a {
+  color: orangered;
+  text-decoration-line: underline;
+}
+.initialInfoPage .curriculo {
+  width: 150px; height: 40px;
+  background-color: orangered;
+  display: flex; justify-content: center; align-items: center;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
+}
+.intialInfoPageImg {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  background-image: url("https://www.pngall.com/wp-content/uploads/2016/04/Happy-Person-Transparent.png");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+}
+
+/* SITE AREA */
+
+.fakeHome {
+  height: 70vh; width: 100vw;
+}
+
+.siteArea {
+  min-height: 70vh; min-width: 100vw;
+  background-color: rgb(37,37,37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+  color: white;
+}
+.siteArea .projetosList {
+  width: 90vw; height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PAGE PROJETOS */
+
+
+.pageTitle {
+  margin-top: 40px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.line {
+  width: 30%; height: 1px;
+  background-color: rgb(170, 170, 170);
+  margin: 10px;
+}
+
+.eachProject {
+  border: 1px solid white;
+  width: 320px; height: 400px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* PAGE TECNOLOGIAS */
+
+.tecnologias {
+  height: 70vh; width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+/* PAGE SOBRE */
+
+.sobre {
+  height: 70vh; width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
