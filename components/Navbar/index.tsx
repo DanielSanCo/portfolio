@@ -51,7 +51,7 @@ const Navbar = () => {
             <div className={styles.verticalLine}></div>
             <div className={styles.socialArea}>
                 {socialList.map((item, index) => (
-                    <Link href={item.link} target='_blank'><Image src={item.img} alt={item.name} key={index} /></Link>
+                    <Link href={item.link} key={index}  target='_blank'><Image src={item.img} alt={item.name} /></Link>
                 ))}
             </div>
             <div className={styles.navlist} style={{ transform: active }}>
