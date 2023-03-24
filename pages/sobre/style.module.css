@@ -1,0 +1,80 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+    height: 400px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main h3 {
+    color: orangered;
+    margin-bottom: -20px;
+}
+.main h2 {
+    font-size: 30px;
+}
+.main .txtSobre {
+    text-align: left;
+    margin: 0px 0px 0px 20px ;
+}
+.contactArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.contato {
+    width: 220px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    color: black;
+    letter-spacing: 2px;
+    margin: 5px;
+    transition: all ease-in 0.2s;
+}
+.contato:hover {
+    background-color: rgb(222, 222, 222);
+}
+.curriculo {
+    margin: 5px;
+    width: 220px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    letter-spacing: 2px;
+    transition: all ease-in 0.2s;
+}
+.curriculo:hover {
+    background-color: rgb(222, 59, 0);
+}
+.txtImg {
+    display: flex;
+}
+.txtImg img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px black;
+}

@@ -1,0 +1,348 @@
+
+
+.container {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.main {
+  width: 100vw;
+}
+.initialPage {
+  min-height: 70vh;
+  min-width: 100vw;
+  background-color: rgb(202, 202, 202);
+  display: flex;
+  color: black;
+  flex-direction: column;
+  position: fixed;
+  z-index: 0;
+}
+.initialPage .initialInfoPageArea {
+  background: white;
+  min-height: 70vh; width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.initialPage .initialInfoPageArea div {
+  margin: 1px;
+}
+.initialPage .initialInfoPageArea div:nth-child(2) {
+  height: 100%;
+  margin: 1px;
+}
+
+.initialPage .initialInfoPageArea div:nth-child(2) {
+  width: 600px;
+}
+
+.initialPage .initialInfoPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.initialPage .initialInfoPage h2 {
+  min-width: 100%;
+  font-size: 40px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.initialPage .initialInfoPage h4 {
+  min-width: 100%;
+  margin-top: 2px;
+  margin-bottom: 0;
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.initialPage .initialInfoPage p {
+  max-width: 300px;
+  text-align: left;
+}
+.initialPage .initialInfoPage p span a {
+  color: orangered;
+  text-decoration-line: underline;
+}
+.initialInfoPage .curriculo {
+  width: 150px; height: 40px;
+  background-color: orangered;
+  display: flex; justify-content: center; align-items: center;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
+}
+.intialInfoPageImg {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  background-image: url("https://www.pngall.com/wp-content/uploads/2016/04/Happy-Person-Transparent.png");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+}
+
+.imgFundo {
+  position: fixed;
+  z-index: -2;
+}
+
+/* SITE AREA */
+
+.fakeHome {
+  height: 70vh; width: 100vw;
+}
+
+.siteArea {
+  min-height: 70vh; min-width: 100vw;
+  background-color: rgb(37,37,37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+  color: white;
+}
+
+/* PAGE PROJETOS */
+
+.infoProjeto {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.333);
+  position: fixed;
+  z-index: 25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoProjeto .info {
+  min-width: 70%;
+  height: 400px;
+  background-color: black;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgb(88, 88, 88);
+}
+
+.info .close {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  height: 10%;
+  transition: all ease-in .1s;
+}
+.info .close:hover {
+  color: red;
+}
+
+.projetoInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+.projetoInfo img {
+  width: 220px;
+  margin: 10px;
+}
+.projetoInfo div:nth-child(1) {
+  border: none;
+}
+.projetoInfo div {
+  height: 99%;
+  width: 33%;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border-left: 1px solid blue;
+}
+.projetoInfo .imgDesc {
+  text-align: center;
+  width: 220px;
+  color:rgb(193, 193, 193);
+}
+.projetoInfo .buttonInfo {
+  width: 120px; height: 30px;
+  background-color: orangered;
+  border-radius: 5px;
+}
+.pageTitle {
+  margin-top: 40px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.line {
+  width: 30%; height: 1px;
+  background-color: rgb(170, 170, 170);
+  margin: 10px;
+}
+
+.eachProject {
+  width: 320px; height: 400px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(56, 56, 56);
+  flex-direction: column;
+  box-shadow: 1px 1px 10px black;
+  padding: 3px;
+}
+.siteArea .projetosList {
+  width: 90vw; height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siteArea .projetosList img {
+  width: 100%;
+}
+.siteArea .projetosList a {
+  border: 1px solid orange;
+  background-color: rgb(224, 98, 30);
+  box-shadow: 1px 1px 10px black;
+  padding: 5px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.siteArea .projetosList a:hover {
+  background-color: orange;
+}
+
+/* PAGE TECNOLOGIAS */
+
+.tecnologias {
+  min-height: 70vh; width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(62, 62, 62);
+  flex-direction: column;
+}
+
+.tecList {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tecList .eachTec {
+  height: 80px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecList .eachTec img {
+  width: 80px;
+}
+/* PAGE SOBRE */
+
+.sobre {
+  height: 100vh; width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(56, 56, 56);
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .initialInfoPage {
+    height: 200px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .initialInfoPage h2 {
+    font-size: 20px;
+  }
+  .initialInfoPage h2:nth-child(1) {
+    margin-top: 60px;
+    font-size: 30px;
+  }
+  .initialInfoPageArea {
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 50px;
+    background-color: red;
+  }
+  .initialPage .initialInfoPage p {
+    min-width: 80%;
+  }
+  .fakeHome {
+    min-height: 100vh; width: 100vw;
+  }
+  .infoPageImg img {
+    width: 100px;
+  }
+  .initialPage .initialInfoPage p {
+    font-size: 14px;
+  }
+  .sobre p {
+    margin: 30px;
+    text-align: center;
+  }
+  .blackBack {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+  }
+  .initialPage {
+    background-color: rgba(0,0,0,.6);
+  }
+  .initialPage .initialInfoPageArea {
+    background: none;
+  }
+  .initialInfoPage {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+  }
+  .intialInfoPageImg {
+    display: none;
+  }
+}
+
+@media (max-height: 610px) {
+  .fakeHome {
+    height: 80vh;
+  }
+  .initialPage .initialInfoPageArea {
+    height: 80vh;
+  }
+  .intialInfoPageImg {
+    background-size: 80%;
+    background-position-y: 100%;
+  }
+  .eachProject {
+    width: 250px; height: 350px;
+  }
+}

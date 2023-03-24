@@ -1,0 +1,60 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1 {
+    
+    margin-top: 150px;
+}
+.container img {
+    width: 40px;
+}
+.eachTec {
+    display: flex;
+    margin: 20px;
+}
+.eachTec:nth-child(1) {
+}
+.InfoArea {
+    margin: 10px;
+}
+.InfoArea .name {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.porcemArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.porcem {
+    height: 6px;
+    width: 300px;
+    border: 1px solid black;
+}
+.porcemV {
+    height: 100%;
+    width: 90%;
+    background-color: orangered;
+}
+.porcemInfo {
+    border: 1px solid black;
+    width: 40px;
+    margin-left: 5px;
+    background-color: orangered;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .porcem {
+        height: 6px;
+        width: 190px;
+        border: 1px solid black;
+    }
+}
