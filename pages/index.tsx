@@ -9,17 +9,6 @@ import InfoProjeto from '../utils/infoProjeto'
 import Image from 'next/image'
 import Link from 'next/link'
 
-/*
-1 - Liste as suas habilidades mais relevantes
-  A - quem sou: faça uma apresentação breve, deixando claro quem você é, incluindo o tipo de trabalho que busca e as certificações importantes. Utilize um tom mais pessoal e não deixe de evidenciar traços de personalidade que separam você do restante;
-  B - contato: coloque os formulários para que o envio de mensagens seja facilitado. Inclua, ainda, os links para seus perfis em redes sociais e acesso ao download do seu currículo;
-  C - trabalhos e projetos: você se orgulha de quais projetos? Você domina quais linguagens? Isso é o que precisa aparecer aqui. Não deixe de fornecer o contexto do projeto e os resultados. Lembre-se de que os recrutadores não desejam ler apenas uma descrição do produto final, mas sim como você contribuiu.
-
-2 - Faça links para redes sociais profissionais
-  A - Jamais subestime a importância de um perfil no LinkedIn. Os recrutadores geralmente conferem se as informações estão coerentes e analisam as indicações e o networking. Então, fique atento a esses detalhes.
-  
-*/
-
 const Home: NextPage = () => {
   const [display, setDisplay] = useState('none')
 
@@ -43,7 +32,7 @@ const Home: NextPage = () => {
               <span className={styles.imgDesc}>{InfoProjeto[0].desc}</span>
             </div>
             <div>
-              <Image src={InfoProjeto[0].img} alt="" />
+              <Image src={InfoProjeto[0].img} alt=""/>
               <span className={styles.imgDesc}>{InfoProjeto[0].imgdesc}</span>
             </div>
             <div>
