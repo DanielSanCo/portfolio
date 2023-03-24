@@ -6,6 +6,8 @@ import styles from '../styles/Home.module.css'
 import { ProjetosList } from '../utils/projetos'
 import tecList from '../utils/tecnologias'
 import InfoProjeto from '../utils/infoProjeto'
+import Image from 'next/image'
+import Link from 'next/link'
 
 /*
 1 - Liste as suas habilidades mais relevantes
@@ -41,12 +43,12 @@ const Home: NextPage = () => {
               <span className={styles.imgDesc}>{InfoProjeto[0].desc}</span>
             </div>
             <div>
-              <img src={InfoProjeto[0].img} alt="" />
+              <Image src={InfoProjeto[0].img} alt="" />
               <span className={styles.imgDesc}>{InfoProjeto[0].imgdesc}</span>
             </div>
             <div>
               {InfoProjeto[0].name}
-              <div className={styles.buttonInfo}><a href={InfoProjeto[0].link} target='_blank'>Abrir Projeto</a></div>
+              <div className={styles.buttonInfo}><Link href={InfoProjeto[0].link} target='_blank'>Abrir Projeto</Link></div>
             </div>
           </div>
         </div>
@@ -59,7 +61,7 @@ const Home: NextPage = () => {
               <h2>Olá!</h2>
               <h4>Eu me chamo Daniel</h4>
               <p>Programador Web com conhecimento sobre diversas das <span><a href='/'>Tecnologias</a></span> mais utilizadas no mercado.</p>
-              <div className={styles.curriculo}><a href='curriculo.pdf' download>Download CV</a></div>
+              <div className={styles.curriculo}><Link href='curriculo.pdf' download>Download CV</Link></div>
             </div>
             <div className={styles.intialInfoPageImg}>
             </div>
@@ -70,7 +72,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.blackBack}></div>
-          <img src="https://www.ft.unicamp.br/sites/default/files/tads.jpg" alt="" className={styles.imgFundo} />
+          <Image src="https://www.ft.unicamp.br/sites/default/files/tads.jpg" alt="" className={styles.imgFundo} />
         </div>
 
         <div className={styles.fakeHome}></div>
@@ -86,8 +88,8 @@ const Home: NextPage = () => {
             {ProjetosList.map((item, index) => (
               <div className={styles.eachProject} key={index}>
                 <div>{item.name}</div>
-                <img src={item.img} alt="" />
-                <a href={item.link} target="_blank"><div>Abrir projeto</div></a>
+                <Image src={item.img} alt="" />
+                <Link href={item.link} target="_blank"><div>Abrir projeto</div></Link>
                 <a style={{ cursor: 'pointer' }}><div onClick={() => changeDisplay()}>Abrir informações</div></a>
               </div>
             ))}
@@ -97,8 +99,8 @@ const Home: NextPage = () => {
             <h2>Tecnologias</h2>
             <div className={styles.tecList}>
               {tecList.map((item, index) => (
-                <div className={styles.eachTec}>
-                  <img src={item.img} alt={item.img} />
+                <div className={styles.eachTec} key={index}>
+                  <Image src={item.img} alt={item.img} />
                 </div>
               ))}
             </div>

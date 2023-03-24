@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 import styles from './style.module.css';
 
 const Sobre = () => {
@@ -13,7 +15,7 @@ const Sobre = () => {
                 <h3>SOBRE</h3>
                 <h2>Um pouco sobre mim e a minha carreira...</h2>
                 <div className={styles.txtImg}>
-                    <img src="images/imgPerfil.jpg" alt="" />
+                    <Image src="images/imgPerfil.jpg" alt="" />
                     <div className={styles.txtSobre}>Desde pequeno sempre fui fascinado pelo avanço tecnologico, com a programação fui capaz de<br />
                         trabalhar com o que amo. Sou um desenvolvedor FullStack, formado em Analise e Desenvolvimento<br />
                         de Sistemas pela faculdade Signorelli, estudei atraves de cursos e fiz um bootcamp pela empresa<br />
@@ -22,7 +24,7 @@ const Sobre = () => {
             </div>
             <div className={styles.contactArea}>
                 <div className={styles.contato}>
-                    <a href='/contato'>Entre em contato</a>
+                    <Link href='/contato'>Entre em contato</Link>
                 </div>
                 <div className={styles.curriculo}>
                     <a href='curriculo.pdf' download>Download CV</a>

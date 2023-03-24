@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import styles from './style.module.css';
 
@@ -35,7 +37,7 @@ const Navbar = () => {
 
     return (
         <nav className={styles.nav}>
-            <div className={styles.logo}><a href='/'><span>D</span>ANIEL.<span>D</span>EV</a></div>
+            <div className={styles.logo}><Link href='/'><span>D</span>ANIEL.<span>D</span>EV</Link></div>
             <ul>
                 {navList.map((item, index) => (
                     <li key={index}><a href={item.link} style={{textTransform: 'uppercase', fontWeight: 'bold', fontSize: '12px'}}>{item.name}</a></li>
@@ -49,7 +51,7 @@ const Navbar = () => {
             <div className={styles.verticalLine}></div>
             <div className={styles.socialArea}>
                 {socialList.map((item, index) => (
-                    <a href={item.link} target='_blank'><img src={item.img} alt={item.name} key={index} /></a>
+                    <Link href={item.link} target='_blank'><Image src={item.img} alt={item.name} key={index} /></Link>
                 ))}
             </div>
             <div className={styles.navlist} style={{ transform: active }}>

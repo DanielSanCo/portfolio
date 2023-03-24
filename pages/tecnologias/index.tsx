@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import tecList from '../../utils/tecnologias';
 import styles from './style.module.css';
 
@@ -14,9 +15,9 @@ const Tecnologias = () => {
             <div style={{ maxWidth: '400px', margin: '10px' }}>Tecnlogias que mais estou habituado e uma das mais pedidas e necessarias no mercado de programação atualmente.</div>
             <div>
                 {tecList.map((item, index) => (
-                    <div className={styles.eachTec}>
+                    <div className={styles.eachTec} key={index}>
                         <div>
-                            <img src={item.img} alt="" />
+                            <Image src={item.img} alt="" />
                         </div>
                         <div className={styles.InfoArea}>
                             <div className={styles.name}>{item.name}</div>
