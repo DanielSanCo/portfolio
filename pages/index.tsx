@@ -90,7 +90,7 @@ const Home: NextPage = () => {
             <div className={styles.tecList}>
               {tecList.map((item, index) => (
                 <div className={styles.eachTec} key={index}>
-                  <img src={item.img} alt={item.img} />
+                  <Image src={item.img} alt={item.img} />
                 </div>
               ))}
             </div>
