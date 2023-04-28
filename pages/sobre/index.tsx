@@ -15,7 +15,7 @@ const Sobre = () => {
                 <h3>SOBRE</h3>
                 <h2>Um pouco sobre mim e a minha carreira...</h2>
                 <div className={styles.txtImg}>
-                    <img src="images/imgPerfil.jpg" alt="" />
+                    <Image src="images/imgPerfil.jpg" alt="" />
                     <div className={styles.txtSobre}>Desde pequeno sempre fui fascinado pelo avanço tecnologico, com a programação fui capaz de<br />
                         trabalhar com o que amo. Sou um desenvolvedor FullStack, formado em Analise e Desenvolvimento<br />
                         de Sistemas pela faculdade Signorelli, estudei atraves de cursos e fiz um bootcamp pela empresa<br />
