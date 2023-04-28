@@ -17,7 +17,7 @@ const Tecnologias = () => {
                 {tecList.map((item, index) => (
                     <div className={styles.eachTec} key={index}>
                         <div>
-                            <Image src={item.img} alt="" />
+                            <img src={item.img} alt="" />
                         </div>
                         <div className={styles.InfoArea}>
                             <div className={styles.name}>{item.name}</div>

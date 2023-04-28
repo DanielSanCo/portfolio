@@ -32,7 +32,7 @@ const Home: NextPage = () => {
               <span className={styles.imgDesc}>{InfoProjeto[0].desc}</span>
             </div>
             <div>
-              <Image src={InfoProjeto[0].img} alt=""/>
+              <img src={InfoProjeto[0].img} alt=""/>
               <span className={styles.imgDesc}>{InfoProjeto[0].imgdesc}</span>
             </div>
             <div>
@@ -53,6 +53,7 @@ const Home: NextPage = () => {
               <div className={styles.curriculo}><Link href='curriculo.pdf' download>Download CV</Link></div>
             </div>
             <div className={styles.intialInfoPageImg}>
+              <img src="images/imgPerfil.jpg" alt="" />
             </div>
             <div className={styles.initialInfoPage}>
               <h2>Desenvolvedor</h2>
@@ -61,7 +62,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.blackBack}></div>
-          <Image src="https://www.ft.unicamp.br/sites/default/files/tads.jpg" alt="" className={styles.imgFundo} />
+          <img src="https://www.ft.unicamp.br/sites/default/files/tads.jpg" alt="" className={styles.imgFundo} />
         </div>
 
         <div className={styles.fakeHome}></div>
@@ -77,7 +78,7 @@ const Home: NextPage = () => {
             {ProjetosList.map((item, index) => (
               <div className={styles.eachProject} key={index}>
                 <div>{item.name}</div>
-                <Image src={item.img} alt="" />
+                <img src={item.img} alt="" />
                 <Link href={item.link} target="_blank"><div>Abrir projeto</div></Link>
                 <a style={{ cursor: 'pointer' }}><div onClick={() => changeDisplay()}>Abrir informações</div></a>
               </div>
@@ -89,7 +90,7 @@ const Home: NextPage = () => {
             <div className={styles.tecList}>
               {tecList.map((item, index) => (
                 <div className={styles.eachTec} key={index}>
-                  <Image src={item.img} alt={item.img} />
+                  <img src={item.img} alt={item.img} />
                 </div>
               ))}
             </div>
