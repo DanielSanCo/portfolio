@@ -12,8 +12,7 @@ const navList = [
 const socialList = [
     { name: 'Linkedin', img: '/images/linkedin2.png', link: 'https://www.linkedin.com/in/daniel-santos-corr%C3%AAa-007979217/' },
     { name: 'Github', img: '/images/github.png', link: 'https://github.com/DanielSanCo' },
-    { name: 'Whatsapp', img: 'https://cdn-icons-png.flaticon.com/512/124/124034.png?w=360', link: 'https://web.whatsapp.com/send?phone=5521969703202' },
-    //zap
+    { name: 'Whatsapp', img: '/images/whatsapp.png', link: 'https://web.whatsapp.com/send?phone=5521969703202' },
 ]
 
 const Navbar = () => {
