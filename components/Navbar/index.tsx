@@ -51,12 +51,12 @@ const Navbar = () => {
             <div className={styles.verticalLine}></div>
             <div className={styles.socialArea}>
                 {socialList.map((item, index) => (
-                    <Link href={item.link} key={index} target='_blank'><img src={item.img} alt={item.name} /></Link>
+                    <Link href={item.link} key={index} target='_blank'><Image src={item.img} alt={item.name} /></Link>
                 ))}
             </div>
             <div className={styles.navlist} style={{ transform: active }}>
                 {navList.map((item, index) => (
-                    <div key={index} onClick={() => (showResponseMenu2(), changeAnimModule())} ><a >{item.name}</a></div>
+                    <div key={index} onClick={() => (showResponseMenu2(), changeAnimModule())} ><Link href={item.link} >{item.name}</Link></div>
                 ))}
             </div>
         </nav>

@@ -34,7 +34,7 @@
 }
 
 .initialPage .initialInfoPageArea div:nth-child(2) {
-  width: 600px;
+  width: 400px;
 }
 
 .initialPage .initialInfoPage {
@@ -84,9 +84,9 @@
   align-items: center;
 }
 .intialInfoPageImg img {
-  width: 40%;
+  width: 50%;
   border-radius: 50%;
-  border: 1px solid black;
+  box-shadow: 1px 1px 10px black;
 }
 
 .imgFundo {
@@ -328,6 +328,26 @@
   }
   .intialInfoPageImg {
     display: none;
+  }
+
+  .info .close {
+    margin: -5px;
+    color: red;
+  }
+  .projetoInfo {
+    font-size: 10px;
+    flex-direction: column;
+  }
+  .projetoInfo div {
+    border: none;
+  }
+  .projetoInfo div img {
+    width: 170px;
+  }
+
+  .initialPage {
+    background-image: url("https://www.ft.unicamp.br/sites/default/files/tads.jpg");
+    height: 100vh;
   }
 }
 

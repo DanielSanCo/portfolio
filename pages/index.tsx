@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             <div className={styles.initialInfoPage}>
               <h2>Olá!</h2>
               <h4>Eu me chamo Daniel</h4>
-              <p>Programador Web com conhecimento sobre diversas das <span><Link href='/'>Tecnologias</Link></span> mais utilizadas no mercado.</p>
+              <p>Programador Web com conhecimento sobre diversas das <span><Link href='/tecnologias'>Tecnologias</Link></span> mais utilizadas no mercado.</p>
               <div className={styles.curriculo}><Link href='curriculo.pdf' download>Download CV</Link></div>
             </div>
             <div className={styles.intialInfoPageImg}>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.blackBack}></div>
-          <Image src="https://www.ft.unicamp.br/sites/default/files/tads.jpg" alt="" className={styles.imgFundo} />
+          {/*<img src="https://www.ft.unicamp.br/sites/default/files/tads.jpg" alt="" className={styles.imgFundo} />*/}
         </div>
 
         <div className={styles.fakeHome}></div>
