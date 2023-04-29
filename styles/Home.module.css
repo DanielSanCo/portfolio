@@ -347,6 +347,7 @@
 
   .initialPage {
     background-image: url("https://www.ft.unicamp.br/sites/default/files/tads.jpg");
+    background-repeat: no-repeat;
     height: 100vh;
   }
 }
